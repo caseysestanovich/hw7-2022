@@ -65,6 +65,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	document.querySelector("#volume").innerHTML = video.volume * 0 + '%'
+	video.muted = true;
 	console.log(video.volume)
 });
 
