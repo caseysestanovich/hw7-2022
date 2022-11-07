@@ -65,8 +65,17 @@ document.querySelector("#skip").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	document.querySelector("#volume").innerHTML = video.volume * 0 + '%'
-	video.muted = true;
-	console.log(video.volume)
+	if (video.muted = false) {    
+		video.muted = true;
+		console.log('Video Muted')
+		document.querySelector("#mute").innerHTML = 'Unmute'
+ }
+
+ else {
+	 video.muted = false;
+	 console.log('Video Unmuted')
+	 document.querySelector("#mute").innerHTML = 'Mute'
+ }
 });
 
 document.querySelector("#slider").addEventListener("click", function() {
