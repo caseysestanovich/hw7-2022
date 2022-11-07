@@ -10,25 +10,6 @@ window.addEventListener("load", function() {
 
 });
 
-// var demoButton = document.getElementById('play');
-// demoButton.addEventListener('click', onClick)
-// demoButton.addEventListener('mouseover', onHover)
-// demoButton.addEventListener('mouseout', onOut)
-
-// function onClick(){
-// 	document.getElementById('status').innerHTML = 'clicked'
-// }
-
-// function onHover(){
-// 	document.getElementById('status').innerHTML = 'moused over'
-// }
-
-// function onOut(){
-// 	document.getElementById('status').innerHTML = 'moused out'
-// }
-
-
-
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("play video");
 	document.querySelector("#volume").innerHTML = video.volume * 100 + '%'
