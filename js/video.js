@@ -64,14 +64,15 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	document.querySelector("#volume").innerHTML = video.volume * 0 + '%'
-	if (video.muted = false) {    
+	if (video.muted == false) {    
+		document.querySelector("#volume").innerHTML = video.volume * 0 + '%'
 		video.muted = true;
 		console.log('Video Muted')
 		document.querySelector("#mute").innerHTML = 'Unmute'
  }
 
  else {
+	document.querySelector("#volume").innerHTML = video.volume * 100 + '%'
 	 video.muted = false;
 	 console.log('Video Unmuted')
 	 document.querySelector("#mute").innerHTML = 'Mute'
