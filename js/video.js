@@ -68,5 +68,23 @@ document.querySelector("#mute").addEventListener("click", function() {
 	console.log(video.volume)
 });
 
+document.querySelector("#slider").addEventListener("click", function() {
+	console.log('The current volume is: ' + video.volume);
+	video.volume = this.value / 100;
+	console.log('The current volume is: ' + video.volume);
+	document.querySelector("#volume").innerHTML = video.volume * 100 + '%';
+});
+
+document.querySelector("#vintage").addEventListener("click", function() {
+	console.log('Old School is on');
+	video.classList.add('oldSchool');
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	console.log('Old School is off / Original on');
+	video.classList.remove('oldSchool');
+});
+
+
 
 
